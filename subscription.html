@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Subscription - San Francisco Chronicle</title>
+    <link rel="stylesheet" href="subscription-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="subscription-header">
+        <div class="header-container">
+            <h1 class="logo">San Francisco Chronicle</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="subscription-main">
+        <div class="subscription-container">
+            <h2 class="subscription-title">Select Subscription</h2>
+
+            <form class="subscription-form">
+                <!-- Option 1: Daily Delivery -->
+                <div class="subscription-option">
+                    <input type="checkbox" id="daily-delivery" name="subscription" value="daily-delivery">
+                    <label for="daily-delivery">
+                        <div class="option-header">
+                            <span class="option-title">PRINT + DIGITAL: Daily Delivery + Unlimited Access</span>
+                        </div>
+                        <div class="option-details">
+                            <p class="option-feature">Daily Home Delivery</p>
+                            <p class="option-feature">+ Unlimited Digital Access</p>
+                            <p class="option-pricing">
+                                <span class="original-price">$28.45/week</span>
+                                <span class="sale-price">$5.99/week</span>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Option 2: Sunday Delivery -->
+                <div class="subscription-option">
+                    <input type="checkbox" id="sunday-delivery" name="subscription" value="sunday-delivery">
+                    <label for="sunday-delivery">
+                        <div class="option-header">
+                            <span class="option-title">PRINT + DIGITAL: Sunday Delivery + Unlimited Access</span>
+                        </div>
+                        <div class="option-details">
+                            <p class="option-pricing">
+                                <span class="original-price">$13/week</span>
+                                <span class="sale-price">$2.99/week</span>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Option 3: Digital Only -->
+                <div class="subscription-option">
+                    <input type="checkbox" id="digital-only" name="subscription" value="digital-only">
+                    <label for="digital-only">
+                        <div class="option-header">
+                            <span class="option-title">DIGITAL: Unlimited Digital Access</span>
+                        </div>
+                        <div class="option-details">
+                            <p class="option-feature bold">99¢ for an entire 6 months</p>
+                            <p class="option-feature">(renews at $4.99/week)</p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <button type="submit" class="btn btn-update">Update</button>
+                    <button type="button" class="btn btn-cancel" onclick="window.location.href='index.html'">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Bottom Icons -->
+    <div class="bottom-icons">
+        <button class="icon-btn" aria-label="Download">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <button class="icon-btn" aria-label="Accessibility">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9H15V22H13V16H11V22H9V9H3V7H21V9Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <button class="icon-btn" aria-label="Share">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z" fill="currentColor"/>
+            </svg>
+        </button>
+    </div>
+</body>
+</html>

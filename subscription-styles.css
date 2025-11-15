@@ -1,0 +1,291 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.subscription-header {
+    background-color: #1a1a1a;
+    padding: 1.5rem 2rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Old English Text MT', Georgia, serif;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Main Content */
+.subscription-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.subscription-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #1a1a1a;
+}
+
+/* Subscription Form */
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Subscription Option */
+.subscription-option {
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.5rem;
+}
+
+.subscription-option:last-of-type {
+    border-bottom: none;
+    padding-bottom: 2.5rem;
+}
+
+.subscription-option input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #1a1a1a;
+}
+
+.subscription-option label {
+    display: block;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.option-header {
+    margin-bottom: 0.75rem;
+}
+
+.option-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.option-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.option-feature {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+.option-feature.bold {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.option-pricing {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.original-price {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.sale-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-update {
+    background-color: #e89b4d;
+    color: #1a1a1a;
+}
+
+.btn-update:hover {
+    background-color: #d68a3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(232, 155, 77, 0.3);
+}
+
+.btn-cancel {
+    background-color: #fff;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+}
+
+.btn-cancel:hover {
+    background-color: #f5f5f5;
+}
+
+/* Bottom Icons */
+.bottom-icons {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+    transform: translateY(-2px);
+}
+
+.icon-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.75rem;
+    }
+
+    .subscription-container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .subscription-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .option-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
+
+    .bottom-icons {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .icon-btn {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-header {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .subscription-main {
+        padding: 1rem;
+    }
+
+    .subscription-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .subscription-title {
+        font-size: 1.25rem;
+    }
+
+    .option-title {
+        font-size: 0.95rem;
+    }
+
+    .option-feature {
+        font-size: 0.9rem;
+    }
+
+    .bottom-icons {
+        flex-direction: column;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        gap: 0.5rem;
+    }
+}
