@@ -1,0 +1,545 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #fff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hamburger-menu {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0.5rem;
+}
+
+.hamburger-menu span {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+}
+
+.logo h1 {
+    font-family: 'Old English Text MT', Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.discovery-btn {
+    background-color: #b91c3a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.discovery-btn:hover {
+    background-color: #9a1730;
+}
+
+.sign-in {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.sign-in:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1a1a1a;
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.hero-left {
+    padding: 2rem 0;
+}
+
+.logo-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Old English Text MT', Georgia, serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #1a1a1a;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    min-height: 140px;
+}
+
+.feature-card.teal {
+    background-color: #4a9b9b;
+}
+
+.feature-card.dark-teal {
+    background-color: #2d7373;
+}
+
+.feature-card.orange {
+    background-color: #d95d3a;
+}
+
+.feature-card.green {
+    background-color: #6b8e23;
+}
+
+.feature-card.red {
+    background-color: #a41e22;
+}
+
+.feature-card.purple {
+    background-color: #5b4b8a;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.feature-content h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.feature-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.95;
+}
+
+/* Print Section */
+.print-section {
+    background-color: #4a9b9b;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.print-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.print-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.print-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.print-note {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.explore-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #fff;
+    color: #4a9b9b;
+}
+
+/* Games Section */
+.games-section {
+    background-color: #f5f5f5;
+    padding: 3rem 2rem;
+}
+
+.games-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.games-title {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.games-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #1a1a1a;
+}
+
+.game-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.game-icon.blue {
+    background-color: #5daddb;
+}
+
+.game-icon.white {
+    background-color: #e8e8e8;
+    border: 2px solid #333;
+}
+
+.game-icon.yellow {
+    background-color: #f5c842;
+}
+
+.game-icon.green {
+    background-color: #8bc34a;
+}
+
+.game-icon.purple {
+    background-color: #9c6bb8;
+}
+
+.game-icon.teal {
+    background-color: #4db8a8;
+}
+
+.game-icon.gray {
+    background-color: #6d6d6d;
+}
+
+.game-icon.orange {
+    background-color: #f39c12;
+}
+
+.game-item span {
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.return-top {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.return-top:hover {
+    opacity: 0.7;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #333;
+}
+
+.footer-logo {
+    font-family: 'Old English Text MT', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.hearst-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-legal a {
+    color: #999;
+    transition: color 0.3s;
+}
+
+.footer-legal a:hover {
+    color: #fff;
+}
+
+.privacy-choices {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.privacy-choices:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .discovery-btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .print-content h2 {
+        font-size: 2rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .games-grid {
+        flex-direction: column;
+    }
+}
